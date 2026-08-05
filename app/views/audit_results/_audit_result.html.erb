@@ -1,0 +1,14 @@
+<div id="<%= dom_id audit_result %>" class="w-full sm:w-auto my-5 space-y-5">
+  <div>
+    <strong class="block font-medium mb-1">Audit execution:</strong>
+    <%= audit_result.audit_execution_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Audit rule:</strong>
+    <%= audit_result.audit_rule_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Total found:</strong>
+    <%= audit_result.total_found %>
+  </div>
+</div>

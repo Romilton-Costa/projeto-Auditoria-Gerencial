@@ -1,0 +1,159 @@
+<div class="min-h-screen" style="background-color: #0f172a; font-family: 'Inter', system-ui, sans-serif;">
+
+  <!-- Header -->
+  <div class="p-6 pb-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold" style="color: #ffffff; margin-bottom: 4px;">Peticionados</h1>
+        <p class="text-sm" style="color: #94a3b8;">Processos com peticionamento concluído e pendente.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; color: #94a3b8; background-color: #1e293b; border: 1px solid #334155; border-radius: 8px; cursor: pointer;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+          </svg>
+          Exportar
+        </button>
+        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+          </svg>
+          Filtros
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="p-6">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Total Peticionados</span>
+        <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">15.893</span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #22c55e; border-radius: 9999px; width: 80%;"></div>
+        </div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Pendentes</span>
+        <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">234</span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #f59e0b; border-radius: 9999px; width: 15%;"></div>
+        </div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Rejeitados</span>
+        <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">47</span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #ef4444; border-radius: 9999px; width: 8%;"></div>
+        </div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Taxa de Sucesso</span>
+        <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">99.7%</span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #3b82f6; border-radius: 9999px; width: 99%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabela -->
+    <div style="background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; overflow: hidden;">
+      <div style="padding: 16px 24px; border-bottom: 1px solid #334155;">
+        <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Lista de Peticionamentos</h2>
+        <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Processos com petições registradas.</p>
+      </div>
+
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="border-bottom: 1px solid #334155;">
+            <th style="text-align: left; padding: 12px 24px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Cliente</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Processo</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Tipo de Petição</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Protocolo</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Data</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Status</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">PGM Cuiabá</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0012345-67.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Contestação</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">PROJ-2025-001234</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">01/08/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(34, 197, 94, 0.15); color: #22c55e;">Peticionado</span></td>
+            <td style="padding: 16px 16px; text-align: center;"><button style="padding: 4px 8px; font-size: 11px; color: #94a3b8; background-color: transparent; border: 1px solid #334155; border-radius: 4px; cursor: pointer;">
+              <svg style="width: 14px; height: 14px; vertical-align: middle;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </button></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">PGM Cuiabá</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0045678-90.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Resposta</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">PROJ-2025-001235</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">01/08/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(251, 191, 36, 0.15); color: #fbbf24;">Pendente</span></td>
+            <td style="padding: 16px 16px; text-align: center;"><button style="padding: 4px 8px; font-size: 11px; color: #94a3b8; background-color: transparent; border: 1px solid #334155; border-radius: 4px; cursor: pointer;">
+              <svg style="width: 14px; height: 14px; vertical-align: middle;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </button></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Pref. Várzea Grande</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0078901-23.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Impugnação</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">PROJ-2025-001236</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">31/07/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(34, 197, 94, 0.15); color: #22c55e;">Peticionado</span></td>
+            <td style="padding: 16px 16px; text-align: center;"><button style="padding: 4px 8px; font-size: 11px; color: #94a3b8; background-color: transparent; border: 1px solid #334155; border-radius: 4px; cursor: pointer;">
+              <svg style="width: 14px; height: 14px; vertical-align: middle;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </button></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Sec. Fazenda MT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0056789-01.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Recurso</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">PROJ-2025-001237</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">30/07/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Rejeitado</span></td>
+            <td style="padding: 16px 16px; text-align: center;"><button style="padding: 4px 8px; font-size: 11px; color: #94a3b8; background-color: transparent; border: 1px solid #334155; border-radius: 4px; cursor: pointer;">
+              <svg style="width: 14px; height: 14px; vertical-align: middle;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </button></td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">TJMT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0034567-89.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Embargos</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">PROJ-2025-001238</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">29/07/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(34, 197, 94, 0.15); color: #22c55e;">Peticionado</span></td>
+            <td style="padding: 16px 16px; text-align: center;"><button style="padding: 4px 8px; font-size: 11px; color: #94a3b8; background-color: transparent; border: 1px solid #334155; border-radius: 4px; cursor: pointer;">
+              <svg style="width: 14px; height: 14px; vertical-align: middle;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; border-top: 1px solid #334155;">
+        <span style="font-size: 12px; color: #94a3b8;">Mostrando 1 a 5 de 15.893 entradas</span>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Anterior</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 6px; cursor: pointer;">1</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">2</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">3</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Próximo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

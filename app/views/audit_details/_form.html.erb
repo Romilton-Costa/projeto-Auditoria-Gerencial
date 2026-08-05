@@ -1,0 +1,32 @@
+<%= form_with(model: audit_detail, class: "contents") do |form| %>
+  <% if audit_detail.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-md mt-3">
+      <h2><%= pluralize(audit_detail.errors.count, "error") %> prohibited this audit_detail from being saved:</h2>
+
+      <ul class="list-disc ml-6">
+        <% audit_detail.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :audit_result_id %>
+    <%= form.text_field :audit_result_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": audit_detail.errors[:audit_result_id].none?, "border-red-400 focus:outline-red-600": audit_detail.errors[:audit_result_id].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :record_id %>
+    <%= form.text_field :record_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": audit_detail.errors[:record_id].none?, "border-red-400 focus:outline-red-600": audit_detail.errors[:record_id].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :metadata %>
+    <%= form.text_field :metadata, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": audit_detail.errors[:metadata].none?, "border-red-400 focus:outline-red-600": audit_detail.errors[:metadata].any?}] %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "w-full sm:w-auto rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

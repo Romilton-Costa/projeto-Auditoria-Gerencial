@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  audit_result: one
+  record_id: MyString
+  metadata: 
+
+two:
+  audit_result: two
+  record_id: MyString
+  metadata: 

@@ -1,0 +1,118 @@
+<div class="min-h-screen" style="background-color: #0f172a; font-family: 'Inter', system-ui, sans-serif;">
+
+  <!-- Header -->
+  <div class="p-6 pb-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold" style="color: #ffffff; margin-bottom: 4px;">Sem Passos</h1>
+        <p class="text-sm" style="color: #94a3b8;">Processos sem próximos passos definidos no fluxo.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+          Filtros
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="p-6">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Total Sem Passos</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">312</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #ef4444; border-radius: 9999px; width: 55%;"></div></div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Clientes Afetados</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">12</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #a855f7; border-radius: 9999px; width: 45%;"></div></div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Fluxos Incompletos</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">18</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #f59e0b; border-radius: 9999px; width: 30%;"></div></div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Resolvidos</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">45</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #22c55e; border-radius: 9999px; width: 13%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Tabela -->
+    <div style="background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; overflow: hidden;">
+      <div style="padding: 16px 24px; border-bottom: 1px solid #334155;">
+        <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Processos Sem Próximos Passos</h2>
+        <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Fluxos de processo sem etapas subsequentes configuradas.</p>
+      </div>
+
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="border-bottom: 1px solid #334155;">
+            <th style="text-align: left; padding: 12px 24px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Cliente</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Processo</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Etapa Atual</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Fluxo</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Desde</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Prioridade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">PGM Cuiabá</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0012345-67.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Aguardando manifestação</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Civil</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">20/06/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Alta</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">PGM Cuiabá</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0045678-90.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Análise de recursos</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Tributário</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">15/06/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(245, 158, 11, 0.15); color: #fbbf24;">Média</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Pref. Várzea Grande</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0078901-23.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Aguardando decisão</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Trabalhista</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">10/06/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Alta</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Sec. Fazenda MT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0056789-01.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Aguardando documentos</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Administrativo</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">05/07/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(34, 197, 94, 0.15); color: #22c55e;">Baixa</span></td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">TJMT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0034567-89.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 14px; color: #e2e8f0;">Aguardando perícia</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Cível</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">01/07/2025</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(245, 158, 11, 0.15); color: #fbbf24;">Média</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; border-top: 1px solid #334155;">
+        <span style="font-size: 12px; color: #94a3b8;">Mostrando 1 a 5 de 312 entradas</span>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Anterior</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 6px; cursor: pointer;">1</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">2</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Próximo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

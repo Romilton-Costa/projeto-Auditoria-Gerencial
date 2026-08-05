@@ -1,0 +1,141 @@
+<div class="min-h-screen" style="background-color: #0f172a; font-family: 'Inter', system-ui, sans-serif;">
+
+  <!-- Header -->
+  <div class="p-6 pb-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold" style="color: #ffffff; margin-bottom: 4px;">Configurações</h1>
+        <p class="text-sm" style="color: #94a3b8;">Gerencie as configurações do sistema.</p>
+      </div>
+      <button style="padding: 8px 16px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500; display: flex; align-items: center; gap: 8px;">
+        <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+        Nova Configuração
+      </button>
+    </div>
+  </div>
+
+  <!-- Seções de Configuração -->
+  <div class="p-6">
+
+    <!-- Configurações Gerais -->
+    <div style="background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; padding: 24px; margin-bottom: 16px;">
+      <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0 0 4px;">Configurações Gerais</h2>
+      <p style="font-size: 12px; color: #94a3b8; margin: 0 0 20px;">Defina os parâmetros gerais do sistema.</p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">Nome da Empresa</label>
+          <input type="text" value="Empresa" style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+        </div>
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">E-mail de Contato</label>
+          <input type="email" value="admin@empresa.com" style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+        </div>
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">Fuso Horário</label>
+          <select style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+            <option>America/Sao_Paulo (GMT-3)</option>
+            <option>America/Manaus (GMT-4)</option>
+            <option>America/Noronha (GMT-2)</option>
+          </select>
+        </div>
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">Idioma</label>
+          <select style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+            <option>Português (BR)</option>
+            <option>English</option>
+            <option>Español</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px; padding-top: 16px; border-top: 1px solid #334155;">
+        <button style="padding: 8px 20px; font-size: 13px; color: #94a3b8; background-color: transparent; border: 1px solid #334155; border-radius: 8px; cursor: pointer;">Cancelar</button>
+        <button style="padding: 8px 20px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">Salvar</button>
+      </div>
+    </div>
+
+    <!-- Notificações -->
+    <div style="background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; padding: 24px; margin-bottom: 16px;">
+      <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0 0 4px;">Notificações</h2>
+      <p style="font-size: 12px; color: #94a3b8; margin: 0 0 20px;">Configure como deseja receber alertas.</p>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #334155;">
+          <div>
+            <span style="font-size: 14px; color: #e2e8f0; font-weight: 500;">Alertas de processos sem andamento</span>
+            <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Receba notificações quando processos ficam parados.</p>
+          </div>
+          <label style="position: relative; width: 44px; height: 24px; cursor: pointer;">
+            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #2563eb; border-radius: 12px; transition: 0.3s;"></span>
+            <span style="position: absolute; left: 24px; top: 2px; width: 20px; height: 20px; background-color: #ffffff; border-radius: 50%; transition: 0.3s;"></span>
+          </label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #334155;">
+          <div>
+            <span style="font-size: 14px; color: #e2e8f0; font-weight: 500;">Relatórios diários por e-mail</span>
+            <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Envio automático do resumo diário às 08:00.</p>
+          </div>
+          <label style="position: relative; width: 44px; height: 24px; cursor: pointer;">
+            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #2563eb; border-radius: 12px; transition: 0.3s;"></span>
+            <span style="position: absolute; left: 24px; top: 2px; width: 20px; height: 20px; background-color: #ffffff; border-radius: 50%; transition: 0.3s;"></span>
+          </label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #334155;">
+          <div>
+            <span style="font-size: 14px; color: #e2e8f0; font-weight: 500;">Alertas de duplicados</span>
+            <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Notificação quando processos duplicados são detectados.</p>
+          </div>
+          <label style="position: relative; width: 44px; height: 24px; cursor: pointer;">
+            <input type="checkbox" style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #334155; border-radius: 12px; transition: 0.3s;"></span>
+            <span style="position: absolute; left: 2px; top: 2px; width: 20px; height: 20px; background-color: #64748b; border-radius: 50%; transition: 0.3s;"></span>
+          </label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0;">
+          <div>
+            <span style="font-size: 14px; color: #e2e8f0; font-weight: 500;">Afastamentos de usuários</span>
+            <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Alerta quando um usuário responsável é afastado.</p>
+          </div>
+          <label style="position: relative; width: 44px; height: 24px; cursor: pointer;">
+            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #2563eb; border-radius: 12px; transition: 0.3s;"></span>
+            <span style="position: absolute; left: 24px; top: 2px; width: 20px; height: 20px; background-color: #ffffff; border-radius: 50%; transition: 0.3s;"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segurança -->
+    <div style="background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; padding: 24px; margin-bottom: 16px;">
+      <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0 0 4px;">Segurança</h2>
+      <p style="font-size: 12px; color: #94a3b8; margin: 0 0 20px;">Configurações de segurança e acesso.</p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">Senha atual</label>
+          <input type="password" placeholder="••••••••" style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+        </div>
+        <div></div>
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">Nova senha</label>
+          <input type="password" placeholder="••••••••" style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+        </div>
+        <div>
+          <label style="display: block; font-size: 12px; color: #94a3b8; margin-bottom: 6px; font-weight: 500;">Confirmar nova senha</label>
+          <input type="password" placeholder="••••••••" style="width: 100%; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #e2e8f0; outline: none;">
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px; padding-top: 16px; border-top: 1px solid #334155;">
+        <button style="padding: 8px 20px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">Atualizar Senha</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

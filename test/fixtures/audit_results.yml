@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  audit_execution: one
+  audit_rule: one
+  total_found: 1
+
+two:
+  audit_execution: two
+  audit_rule: two
+  total_found: 1

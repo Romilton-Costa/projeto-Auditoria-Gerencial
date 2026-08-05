@@ -1,0 +1,93 @@
+<div class="bg-slate-800 rounded-xl border border-slate-700 overflow-hidden">
+
+  <div class="flex items-center justify-between p-5 border-b border-slate-700">
+    <h2 class="text-white text-lg font-semibold">
+      Lista de Endereços
+    </h2>
+
+    <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">
+      <%= @enderecos.count %> registros
+    </span>
+  </div>
+
+  <% if @enderecos.present? %>
+
+    <div class="overflow-x-auto">
+
+      <table class="w-full">
+
+        <thead class="bg-slate-700">
+          <tr>
+            <th class="text-left p-4 text-slate-300">Cliente</th>
+            <th class="text-left p-4 text-slate-300">Cidade</th>
+            <th class="text-left p-4 text-slate-300">Estado</th>
+            <th class="text-left p-4 text-slate-300">CEP</th>
+            <th class="text-left p-4 text-slate-300">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <% @enderecos.each do |endereco| %>
+
+            <tr class="border-t border-slate-700 hover:bg-slate-700/40 transition">
+
+              <td class="p-4 text-white font-medium">
+                <%= endereco.cliente %>
+              </td>
+
+              <td class="p-4 text-slate-300">
+                <%= endereco.cidade %>
+              </td>
+
+              <td class="p-4 text-slate-300">
+                <%= endereco.estado %>
+              </td>
+
+              <td class="p-4 text-slate-300">
+                <%= endereco.cep %>
+              </td>
+
+              <td class="p-4">
+
+                <% if endereco.status == "Ativo" %>
+                  <span class="px-3 py-1 rounded-full text-xs bg-green-500/20 text-green-400">
+                    Ativo
+                  </span>
+                <% elsif endereco.status == "Pendente" %>
+                  <span class="px-3 py-1 rounded-full text-xs bg-yellow-500/20 text-yellow-400">
+                    Pendente
+                  </span>
+                <% else %>
+                  <span class="px-3 py-1 rounded-full text-xs bg-red-500/20 text-red-400">
+                    Inativo
+                  </span>
+                <% end %>
+
+              </td>
+
+            </tr>
+
+          <% end %>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  <% else %>
+
+    <div class="text-center py-20">
+      <h3 class="text-white text-xl font-semibold mb-2">
+        Nenhum endereço encontrado
+      </h3>
+
+      <p class="text-slate-400">
+        Cadastre um endereço para começar.
+      </p>
+    </div>
+
+  <% end %>
+
+</div>

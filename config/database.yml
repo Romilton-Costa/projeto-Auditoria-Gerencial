@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: romilton
+  password: 123456
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: auditoria_operacional_development
+
+test:
+  <<: *default
+  database: auditoria_operacional_test

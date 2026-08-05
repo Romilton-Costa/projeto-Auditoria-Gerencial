@@ -1,0 +1,9 @@
+<% content_for :title, "New audit result" %>
+
+<div class="md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl">New audit result</h1>
+
+  <%= render "form", audit_result: @audit_result %>
+
+  <%= link_to "Back to audit results", audit_results_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
+</div>

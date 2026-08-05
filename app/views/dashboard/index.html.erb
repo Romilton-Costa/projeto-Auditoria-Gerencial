@@ -1,0 +1,302 @@
+<div class="min-h-screen" style="background-color: #0f172a; font-family: 'Inter', system-ui, sans-serif;">
+
+  <!-- Header -->
+  <div class="flex justify-between items-center p-6 pb-0">
+    <div>
+      <h1 class="text-2xl font-bold" style="color: #ffffff; margin-bottom: 4px;">
+        Dashboard de Auditoria
+      </h1>
+      <p class="text-sm" style="color: #94a3b8;">
+        Monitoramento em tempo real das inconsistências operacionais.
+      </p>
+    </div>
+  </div>
+
+  <!-- Cards de Métricas -->
+  <div class="p-6">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+
+      <!-- Total de Inconsistências -->
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Total de Inconsistências</span>
+          <svg style="width: 20px; height: 20px; color: #64748b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+          </svg>
+        </div>
+        <div style="display: flex; align-items: baseline; gap: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">19.310</span>
+          <span style="font-size: 12px; color: #4ade80; display: flex; align-items: center;">
+            <svg style="width: 12px; height: 12px; margin-right: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+            </svg>
+            12%
+          </span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #3b82f6; border-radius: 9999px; width: 75%;"></div>
+        </div>
+      </div>
+
+      <!-- Casos Críticos -->
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Casos Críticos</span>
+          <svg style="width: 20px; height: 20px; color: #f87171;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+          </svg>
+        </div>
+        <div style="display: flex; align-items: baseline; gap: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">1.209</span>
+          <span style="font-size: 12px; color: #f87171; display: flex; align-items: center;">
+            <svg style="width: 12px; height: 12px; margin-right: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+            </svg>
+            8%
+          </span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #ef4444; border-radius: 9999px; width: 40%;"></div>
+        </div>
+      </div>
+
+      <!-- Clientes Afetados -->
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Clientes Afetados</span>
+          <svg style="width: 20px; height: 20px; color: #64748b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+        </div>
+        <div style="display: flex; align-items: baseline; gap: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">97</span>
+          <span style="font-size: 12px; color: #94a3b8; display: flex; align-items: center;">
+            <span style="width: 4px; height: 4px; background-color: #94a3b8; border-radius: 50%; margin-right: 4px;"></span>
+            0%
+          </span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #a855f7; border-radius: 9999px; width: 20%;"></div>
+        </div>
+      </div>
+
+      <!-- Resolutividade Média -->
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Resolutividade Média</span>
+          <svg style="width: 20px; height: 20px; color: #64748b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div style="display: flex; align-items: baseline; gap: 8px;">
+          <span style="font-size: 32px; font-weight: 700; color: #ffffff;">84.2%</span>
+          <span style="font-size: 12px; color: #4ade80; display: flex; align-items: center;">
+            <svg style="width: 12px; height: 12px; margin-right: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+            </svg>
+            41%
+          </span>
+        </div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;">
+          <div style="height: 100%; background-color: #22c55e; border-radius: 9999px; width: 84%;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Relatório de Auditoria Detalhado -->
+  <div style="margin: 0 24px 24px; background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; overflow: hidden;">
+
+    <!-- Cabeçalho da tabela -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-bottom: 1px solid #334155;">
+      <div>
+        <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Relatório de Auditoria Detalhado</h2>
+        <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Monitoramento em tempo real das inconsistências operacionais.</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button style="padding: 8px 16px; font-size: 13px; color: #cbd5e1; background-color: #0f172a; border: 1px solid #334155; border-radius: 8px; cursor: pointer; transition: background-color 0.2s;">
+          Todas as Categorias
+        </button>
+        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+          </svg>
+          Filtros Avançados
+        </button>
+        <button style="padding: 8px; color: #94a3b8; background-color: transparent; border: none; border-radius: 8px; cursor: pointer;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tabela -->
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="border-bottom: 1px solid #334155;">
+            <th style="text-align: left; padding: 12px 24px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Auditoria</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Categoria</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Qtd</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Clientes</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Execução</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Criticidade</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Campo cidade vazia na tabela Endereços</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Cadastros</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">58</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">4</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #facc15; display: inline-block;"></span>
+              Média
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(250, 204, 21, 0.15); color: #facc15;">Amarelo</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Expedientes não cadastrados</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Processos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">1.243</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">8</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #ef4444; display: inline-block;"></span>
+              Alta
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Vermelho</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Processo atual sem próximo passo</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Fluxos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">312</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">12</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 700; color: #ef4444; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #dc2626; display: inline-block;"></span>
+              CRÍTICA
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Vermelho</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Processos com responsável inativo</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Usuários</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">45</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">5</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #ef4444; display: inline-block;"></span>
+              Alta
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(251, 146, 60, 0.15); color: #fb923c;">Laranja</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Processos judiciais duplicados</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Processos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">28</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">6</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #facc15; display: inline-block;"></span>
+              Média
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(250, 204, 21, 0.15); color: #facc15;">Amarelo</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Processos na caixa de uma função</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Fluxos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">183</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">7</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #ef4444; display: inline-block;"></span>
+              Alta
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(251, 146, 60, 0.15); color: #fb923c;">Laranja</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Processos peticionados</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Processos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">15.893</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">23</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #60a5fa; display: inline-block;"></span>
+              Informativo
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(34, 197, 94, 0.15); color: #22c55e;">Verde</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Processos sem andamento há mais de 30 dias</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Processos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">892</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">11</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 700; color: #ef4444; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #dc2626; display: inline-block;"></span>
+              Crítica
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Vermelho</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Sem atores e funções nos atributos</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Fluxos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">13</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">3</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #facc15; display: inline-block;"></span>
+              Média
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(250, 204, 21, 0.15); color: #facc15;">Amarelo</span></td>
+          </tr>
+
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0;">Sem funções e usuários nos atores</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">Fluxos</span></td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">7</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0;">2</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #94a3b8;">Hoje 08:00</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; color: #e2e8f0; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background-color: #facc15; display: inline-block;"></span>
+              Média
+            </td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(250, 204, 21, 0.15); color: #facc15;">Amarelo</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Paginação -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; border-top: 1px solid #334155;">
+      <span style="font-size: 12px; color: #94a3b8;">Mostrando 1 a 10 de 12 entradas</span>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">
+          Anterior
+        </button>
+        <button style="padding: 4px 12px; font-size: 12px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 6px; cursor: pointer;">1</button>
+        <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">2</button>
+        <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">
+          Próximo
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

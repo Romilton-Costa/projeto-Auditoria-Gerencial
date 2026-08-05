@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auditoria Gerencial</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
+
+<body class="bg-slate-950">
+
+  <div class="flex">
+
+    <%= render "shared/sidebar" %>
+
+    <main class="flex-1">
+      <%= yield %>
+    </main>
+
+  </div>
+
+</body>
+</html>

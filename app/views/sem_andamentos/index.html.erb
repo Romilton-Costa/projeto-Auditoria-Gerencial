@@ -1,0 +1,131 @@
+<div class="min-h-screen" style="background-color: #0f172a; font-family: 'Inter', system-ui, sans-serif;">
+
+  <!-- Header -->
+  <div class="p-6 pb-0">
+    <div class="flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold" style="color: #ffffff; margin-bottom: 4px;">Sem Andamento</h1>
+        <p class="text-sm" style="color: #94a3b8;">Processos sem movimentação há mais de 30 dias.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; color: #94a3b8; background-color: #1e293b; border: 1px solid #334155; border-radius: 8px; cursor: pointer;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Exportar
+        </button>
+        <button style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 13px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 8px; cursor: pointer; font-weight: 500;">
+          <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+          Filtros
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="p-6">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px;">
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Total Sem Andamento</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">892</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #ef4444; border-radius: 9999px; width: 70%;"></div></div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Clientes Afetados</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">11</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #a855f7; border-radius: 9999px; width: 40%;"></div></div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">+90 dias Parado</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">156</span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #dc2626; border-radius: 9999px; width: 17%;"></div></div>
+      </div>
+      <div style="background-color: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #1e293b;">
+        <span style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500;">Tempo Médio</span>
+        <div style="margin-top: 8px;"><span style="font-size: 32px; font-weight: 700; color: #ffffff;">67<span style="font-size: 16px; color: #94a3b8;"> dias</span></span></div>
+        <div style="margin-top: 12px; height: 4px; background-color: #0f172a; border-radius: 9999px; overflow: hidden;"><div style="height: 100%; background-color: #f59e0b; border-radius: 9999px; width: 50%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Filtros por tempo -->
+    <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+      <button style="padding: 6px 14px; font-size: 12px; color: #94a3b8; background-color: #1e293b; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Todos (892)</button>
+      <button style="padding: 6px 14px; font-size: 12px; color: #f59e0b; background-color: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 6px; cursor: pointer;">30-60 dias (423)</button>
+      <button style="padding: 6px 14px; font-size: 12px; color: #ef4444; background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 6px; cursor: pointer;">60-90 dias (313)</button>
+      <button style="padding: 6px 14px; font-size: 12px; color: #dc2626; background-color: rgba(220, 38, 38, 0.1); border: 1px solid rgba(220, 38, 38, 0.3); border-radius: 6px; cursor: pointer;">+90 dias (156)</button>
+    </div>
+
+    <!-- Tabela -->
+    <div style="background-color: #1e293b; border-radius: 12px; border: 1px solid #1e293b; overflow: hidden;">
+      <div style="padding: 16px 24px; border-bottom: 1px solid #334155;">
+        <h2 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Processos Parados</h2>
+        <p style="font-size: 12px; color: #94a3b8; margin: 2px 0 0;">Processos sem movimentação há mais de 30 dias.</p>
+      </div>
+
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="border-bottom: 1px solid #334155;">
+            <th style="text-align: left; padding: 12px 24px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Cliente</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Processo</th>
+            <th style="text-align: left; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Último Movimento</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Dias Parado</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Responsável</th>
+            <th style="text-align: center; padding: 12px 16px; font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px;">Urgência</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">PGM Cuiabá</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0012345-67.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 13px; color: #94a3b8;">15/05/2025</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 600; color: #dc2626;">80 dias</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #e2e8f0;">João Dias</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(220, 38, 38, 0.15); color: #dc2626;">Urgente</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Pref. Várzea Grande</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0078901-23.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 13px; color: #94a3b8;">20/05/2025</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 600; color: #dc2626;">75 dias</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #e2e8f0;">Pedro Santos</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(220, 38, 38, 0.15); color: #dc2626;">Urgente</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Sec. Fazenda MT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0056789-01.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 13px; color: #94a3b8;">01/06/2025</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 600; color: #ef4444;">63 dias</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #e2e8f0;">Carlos Ferreira</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(239, 68, 68, 0.15); color: #ef4444;">Alta</span></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #334155;">
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">TJMT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0034567-89.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 13px; color: #94a3b8;">10/06/2025</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 600; color: #f59e0b;">54 dias</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #e2e8f0;">Lucas Freitas</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(245, 158, 11, 0.15); color: #fbbf24;">Média</span></td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 24px; font-size: 14px; color: #e2e8f0; font-weight: 500;">Sec. Educação MT</td>
+            <td style="padding: 16px 16px;"><span style="font-size: 12px; color: #94a3b8; background-color: #0f172a; padding: 2px 8px; border-radius: 4px;">0090123-45.2024</span></td>
+            <td style="padding: 16px 16px; font-size: 13px; color: #94a3b8;">25/06/2025</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 14px; font-weight: 600; color: #f59e0b;">39 dias</td>
+            <td style="padding: 16px 16px; text-align: center; font-size: 13px; color: #e2e8f0;">Tânia Lima</td>
+            <td style="padding: 16px 16px; text-align: center;"><span style="padding: 4px 12px; font-size: 12px; font-weight: 500; border-radius: 9999px; background-color: rgba(245, 158, 11, 0.15); color: #fbbf24;">Média</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; border-top: 1px solid #334155;">
+        <span style="font-size: 12px; color: #94a3b8;">Mostrando 1 a 5 de 892 entradas</span>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Anterior</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #ffffff; background-color: #2563eb; border: none; border-radius: 6px; cursor: pointer;">1</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">2</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">3</button>
+          <button style="padding: 4px 12px; font-size: 12px; color: #94a3b8; background-color: #0f172a; border: 1px solid #334155; border-radius: 6px; cursor: pointer;">Próximo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
