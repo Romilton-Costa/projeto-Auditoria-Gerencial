@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "/detalhes", to: "detalhes#index", as: :detalhes
   get "/clientes", to: "clientes#index", as: :clientes
   get "/configuracao", to: "configuracao#index", as: :configuracao
+   get '/monitoring', to: 'monitoring#index', as: :monitoring
   resources :client_details
   resources :audit_details
   resources :audit_results

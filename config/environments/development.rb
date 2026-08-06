@@ -5,7 +5,8 @@ Rails.application.configure do
 
   # Make code changes take effect immediately without server restart.
   config.enable_reloading = true
-
+  ENV['ZABBIX_API_URL'] = "http://161.35.63.175:81/api_jsonrpc.php"
+  ENV['ZABBIX_API_TOKEN'] = "0277b9c8094fae8040c63ba66caa3b351e716679408a54d43b697c018a120c23"
   # Do not eager load code on boot.
   config.eager_load = false
 
